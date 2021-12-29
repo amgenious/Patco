@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.sec1{
+  background-image: radial-gradient(aqua, blue);
+  text-align: center;
+  border-radius: 25px 25px 0px 0px;
+}
+hr{
+  visibility: hidden;
+}
+
+.sec1 ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.sec11{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(44, 35, 35, 0.404),rgba(255, 255, 255, 0.308)), url(images/2.png);
+  background-size: cover;
+  background-position: center;
+  transition: 5s;
+  justify-content: space-around;
+
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 40s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-out;
+}
+@keyframes animate{
+  0%{
+      background-image: url(images/1.jpg);
+  }
+  20%{
+      background-image: url(images/2.png);
+  }
+  40%{
+      background-image: url(images/3.jpg);
+  }
+  60%{
+      background-image: url(images/4.jpg);
+  }
+  80%{
+      background-image: url(images/5.jpg);
+  }
+  100%{
+      background-image: url(images/1.jpg);
+  }
+}
+.sec11 h1{
+  color: white;
+  text-shadow: 3px 2px 3px blue;
+  
+}
+.sec2{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-image: radial-gradient(aqua, blue);
+}
+.sec3{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  height: 10vh;
+  background-color: gold;
+}
+.sec3 button{
+  margin-top: 1.5%;
+  height: 5vh;
+}
+@media screen and (max-width:415px){
+  .sec3{
+    display: flex;
+    flex-direction:column ;
+    height: 20vh;
+  }
+  .sec4 .fol{
+    display: flex;
+    flex-direction: column;
+  }
+  *{
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar{
+      display: none;
+    }
+}
+.sec3 p{
+  margin-top: 1.5%;
+  font-size: larger;
+}
+
+.sec4 h1{
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+.sec4 .card{
+  width: 200px;
+  height: 200px;
+  border: transparent;
+  border-radius: 20px 20px;
+  background-image: url(images/9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 25px;
+}
+.sec4 .card p{
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+.sec4 .fol{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#row5{
+  background-image:url(images/10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec5{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 55vh;
+  padding-top: 20px;
+  background-color: none;
+  color: whitesmoke;
+}
+.sec5 .name{
+  border: transparent;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px 10px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(aqua, rgba(0, 0, 255, 0.74));
+}
+.sec5 textarea{
+  width: 350px;
+  height: 60px;
+  border: 1px solid blue;
+}
+.sec5 button{
+  margin-bottom: 20px;
+}
+.sec5a{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: large;
+  color: whitesmoke;
+}
+.foot, .foota{
+  padding-top: 30px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: none;
+  border: transparent;
+}
+.last{
+  text-align: center;
+  font-size: small;
+}
+#row6{
+  background-color: darkturquoise;
+  border: 2px solid transparent;
+  border-radius: 0px 0px 20px 20px;
+}
